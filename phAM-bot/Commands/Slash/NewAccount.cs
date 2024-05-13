@@ -47,10 +47,11 @@ namespace phAM.Commands.Slash
                     c.Open();
 
                     //check for max accounts
+                    
                     string sql = $"SELECT * FROM `account` WHERE email_Address=\"{ctx.User.Id}\"";
                     MySqlCommand cmd = new(sql, c);
                     MySqlDataReader rdr = cmd.ExecuteReader();
-                    if (rdr.HasRows)
+                    if (rdr.HasRows && g.Max > 0)
                     {
                         int i = 0;
                         while (rdr.Read())
