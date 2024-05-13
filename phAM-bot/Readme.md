@@ -1,11 +1,11 @@
 ﻿# phAM-bot
 
 ## description:
-saves admin-provided credentials for an ace_auth sql server on a per-guild (discord server) basis
-can optionally restrict the maximum number of accounts that can be bound to a discord id
-allows for creation of new accounts that are automatically bound to the calling user
-allows displaying of all accounts that are bound to the calling user
-allows changing of passwords for any account that is bound to the calling user
+saves admin-provided credentials for an ace_auth sql server on a per-guild (discord server) basis  
+can optionally restrict the maximum number of accounts that can be bound to a discord id  
+allows for creation of new accounts that are automatically bound to the calling user  
+allows displaying of all accounts that are bound to the calling user  
+allows changing of passwords for any account that is bound to the calling user  
 
 **todo**: *display how many characters are on each account?*
 
