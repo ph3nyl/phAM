@@ -11,7 +11,7 @@ namespace phAM.Commands.Slash
             DiscordEmbedBuilder message = new()
             {
                 Title = $"{ctx.User.Username} used /help",
-                Color = DiscordColor.Green,
+                Color = DiscordColor.Gray,
                 Description = $"gotchu fam"
             };
 

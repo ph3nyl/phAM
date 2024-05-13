@@ -34,6 +34,7 @@ namespace phAM
             var slashCommandsConfig = Client.UseSlashCommands();
             slashCommandsConfig.RegisterCommands<Help>();
             slashCommandsConfig.RegisterCommands<Setup>();
+            slashCommandsConfig.RegisterCommands<Stats>();
             slashCommandsConfig.RegisterCommands<NewAccount>();
             slashCommandsConfig.RegisterCommands<FixAccount>();
             slashCommandsConfig.RegisterCommands<LogAccount>();
