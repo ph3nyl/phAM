@@ -45,6 +45,8 @@ namespace phAM.Commands.Slash
                 message.Description = "wasnt able to validate the provided sql server. get fkd kid";
                 message.Color = DiscordColor.DarkRed;
                 Helper.DebugPrintFailure(ctx, message.Description);
+                await ctx.CreateResponseAsync(message, true);
+                return;
             }
 
             Helper.DebugPrintSuccess(ctx, message.Title);

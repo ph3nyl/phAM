@@ -24,7 +24,10 @@
 
   <Target Name="CleanupFiles" AfterTargets="PostBuildEvent">
     <ItemGroup>
-      <FilesToDelete Include="$(OutDir)System.*.dll" />
+      <FilesToDelete Include="$(OutDir)System.Drawing.*.dll" />
+      <FilesToDelete Include="$(OutDir)System.IO.*.dll" />
+      <FilesToDelete Include="$(OutDir)System.Windows.*.dll" />
+      <FilesToDelete Include="$(OutDir)System.Security.Cryptography.*.dll" />
       <FilesToDelete Include="$(OutDir)ZstdSharp.dll" />
       <FilesToDelete Include="$(OutDir)Microsoft.Win32.SystemEvents.dll" />
       <FilesToDelete Include="$(OutDir)K4os.*.dll" />
